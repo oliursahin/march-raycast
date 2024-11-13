@@ -23,9 +23,9 @@ declare namespace Preferences {
 declare namespace Arguments {
   /** Arguments passed to the `quick-add-item-in-inbox` command */
   export type QuickAddItemInInbox = {
-  /** title */
+  /** Title */
   "title": string,
-  /**  description (optional) */
+  /** Description */
   "notes": string
 }
 }
