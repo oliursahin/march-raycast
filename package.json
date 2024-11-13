@@ -19,13 +19,13 @@
       "arguments": [
         {
           "name": "title",
-          "placeholder": "title",
+          "placeholder": "Title",
           "type": "text",
           "required": true
         },
         {
           "name": "notes",
-          "placeholder": " description (optional)",
+          "placeholder": "Description",
           "type": "text",
           "required": false
         }
@@ -36,6 +36,7 @@
     "@raycast/api": "^1.64.0"
   },
   "devDependencies": {
+    "@raycast/eslint-config": "^1.0.11",
     "@types/node": "^20.8.10",
     "@types/react": "^18.2.27",
     "@typescript-eslint/eslint-plugin": "^6.11.0",

@@ -27,11 +27,11 @@ export default function Command(props: { arguments: Arguments }) {
       try {
         const { title, notes } = props.arguments;
         await createInboxItem(title, notes);
-        
+
         toast.style = Toast.Style.Success;
         toast.title = "Added to March Inbox";
         toast.message = title;
-        
+
         toast.primaryAction = {
           title: "Open in March",
           onAction: () => {
@@ -40,7 +40,6 @@ export default function Command(props: { arguments: Arguments }) {
         };
 
         await popToRoot();
-
       } catch (error) {
         toast.style = Toast.Style.Failure;
         toast.title = "Failed to Add Item";
