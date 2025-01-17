@@ -18,6 +18,14 @@ declare type Preferences = ExtensionPreferences
 declare namespace Preferences {
   /** Preferences accessible in the `quick-add-item-in-inbox` command */
   export type QuickAddItemInInbox = ExtensionPreferences & {}
+  /** Preferences accessible in the `today` command */
+  export type Today = ExtensionPreferences & {}
+  /** Preferences accessible in the `inbox` command */
+  export type Inbox = ExtensionPreferences & {}
+  /** Preferences accessible in the `all-objects` command */
+  export type AllObjects = ExtensionPreferences & {}
+  /** Preferences accessible in the `search` command */
+  export type Search = ExtensionPreferences & {}
 }
 
 declare namespace Arguments {
@@ -28,5 +36,13 @@ declare namespace Arguments {
   /** Description */
   "notes": string
 }
+  /** Arguments passed to the `today` command */
+  export type Today = {}
+  /** Arguments passed to the `inbox` command */
+  export type Inbox = {}
+  /** Arguments passed to the `all-objects` command */
+  export type AllObjects = {}
+  /** Arguments passed to the `search` command */
+  export type Search = {}
 }
 

@@ -12,10 +12,11 @@
   "commands": [
     {
       "name": "quick-add-item-in-inbox",
-      "title": "Add to March",
-      "subtitle": "Add Item",
-      "description": "Quickly add an item to March Inbox",
+      "title": "Add Object",
+      "subtitle": "Add Anything",
+      "description": "Quickly add an object to March Inbox",
       "mode": "view",
+      "icon": "extension-icon.png",
       "arguments": [
         {
           "name": "title",
@@ -30,10 +31,43 @@
           "required": false
         }
       ]
+    },
+    {
+      "name": "today",
+      "title": "Today",
+      "subtitle": "Today's Objects",
+      "description": "View all objects scheduled for today",
+      "mode": "view",
+      "icon": "extension-icon.png"
+    },
+    {
+      "name": "inbox",
+      "title": "Inbox",
+      "subtitle": "View All Unorganised Items",
+      "description": "View all unorganised items in your inbox",
+      "mode": "view",
+      "icon": "extension-icon.png"
+    },
+    {
+      "name": "all-objects",
+      "title": "All Objects",
+      "subtitle": "View All Objects",
+      "description": "View all your objects",
+      "mode": "view",
+      "icon": "extension-icon.png"
+    },
+    {
+      "name": "search",
+      "title": "Search Objects",
+      "subtitle": "Search Through All Objects",
+      "description": "Search through all your objects",
+      "mode": "view",
+      "icon": "extension-icon.png"
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.64.0"
+    "@raycast/api": "^1.64.0",
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^1.0.11",
